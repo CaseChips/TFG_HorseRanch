@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: WateringCan
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Watering Can
-  icon: {fileID: 1308745439200301744, guid: a2effbf0304b4ef4a96645e1ffb6dda1, type: 3}
+  icon: {fileID: 1308745439200301744, guid: 0b379d35c01315c4f830027715cda5f5, type: 3}
   isConsumable: 0
