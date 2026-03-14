@@ -4,6 +4,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance;
+    public InventoryUI inventoryUI;
 
     [Header("Configuration")]
     public int maxSlots = 5;
@@ -37,7 +38,7 @@ public class InventoryManager : MonoBehaviour
 
         selectedSlotIndex = Mathf.Clamp(selectedSlotIndex, 0, maxSlots - 1);
 
-        //TODO: Update visuals
+        inventoryUI.UpdateUI();
     }
 
     public bool AddItem(ItemData item)

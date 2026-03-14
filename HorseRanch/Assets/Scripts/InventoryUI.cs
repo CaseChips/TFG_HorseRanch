@@ -8,12 +8,12 @@ public class InventoryUI : MonoBehaviour
 
     public Image[] highlightBoxes;
 
-    void Update()
-    {
-        UpdateUI();
-    }
+    //void Update()
+    //{
+    //    UpdateUI();
+    //}
 
-    void UpdateUI()
+    public void UpdateUI()
     {
         for (int i = 0; i < itemIcons.Length; i++)
         {
