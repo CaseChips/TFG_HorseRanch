@@ -7,8 +7,15 @@ public class HoofMinigame : MonoBehaviour
 
     [Header("UI Elements")]
     public GameObject minigamePanel;
+    public Texture2D hoofPickCursor; 
+
+    [Header("Game Settings")]
+    public int totalDirtPieces = 3; 
+    public int maxMistakes = 3;     
 
     private HorseStats currentHorse;
+    private int dirtRemaining;
+    private int mistakesMade;
 
     private void Awake()
     {
@@ -24,23 +31,69 @@ public class HoofMinigame : MonoBehaviour
     {
         currentHorse = horse;
         minigamePanel.SetActive(true);
-
-        // Optional: Freeze the player so they can't walk away while picking hooves!
         Time.timeScale = 0f;
 
-        Debug.Log("Hoof Minigame Opened!");
+        dirtRemaining = totalDirtPieces;
+        mistakesMade = 0;
 
-        // TODO: In Phase 2, we will spawn the dirt and reset the "Hurt" meter here
+ 
+        if (hoofPickCursor != null)
+        {
+            Cursor.SetCursor(hoofPickCursor, Vector2.zero, CursorMode.Auto);
+        }
+
+        Debug.Log("Hoof Minigame Opened! Clear the dirt, avoid the pink area.");
     }
 
-    // Called when we finish or cancel the game
+    public void DirtPicked()
+    {
+        dirtRemaining--;
+        Debug.Log("Dirt picked! Remaining: " + dirtRemaining);
+
+        if (dirtRemaining <= 0)
+        {
+            WinGame();
+        }
+    }
+
+    public void FrogPoked()
+    {
+        mistakesMade++;
+        Debug.Log("Ouch! You hit the frog! Mistakes: " + mistakesMade + "/" + maxMistakes);
+
+        if (mistakesMade >= maxMistakes)
+        {
+            LoseGame();
+        }
+    }
+
+    private void WinGame()
+    {
+        Debug.Log("Perfect! Hooves are clean.");
+        if (currentHorse != null)
+        {
+            currentHorse.IncreaseStat("hygiene", 40f);
+            currentHorse.IncreaseStat("comfort", 10f);
+        }
+        CloseMinigame();
+    }
+
+    private void LoseGame()
+    {
+        Debug.Log("You poked the frog too much! The horse is now lame.");
+        if (currentHorse != null)
+        {
+            currentHorse.IncreaseStat("comfort", -50f);
+            // In a full game, you might trigger a "lame" boolean here
+        }
+        CloseMinigame();
+    }
+
     public void CloseMinigame()
     {
         minigamePanel.SetActive(false);
-
-        // Unfreeze the player
         Time.timeScale = 1f;
 
-        Debug.Log("Hoof Minigame Closed!");
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 }
