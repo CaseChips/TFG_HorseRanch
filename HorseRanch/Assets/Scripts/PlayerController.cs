@@ -5,17 +5,31 @@ public class PlayerController : MonoBehaviour
     [Header("Settings")]
     public float moveSpeed = 5f;
 
-    [Header("Components")]
-    public Rigidbody2D rb; 
+    private Rigidbody2D rb; 
 
     private Vector2 movement;
 
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal"); 
-        movement.y = Input.GetAxisRaw("Vertical");   
+        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        movement = movement.normalized;
+        movement = input.normalized;
+
+        if (input.x != 0 || input.y != 0)
+        {
+            animator.SetFloat("Horizontal", input.x);
+            animator.SetFloat("Vertical", input.y);
+        }
+
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     void FixedUpdate()
