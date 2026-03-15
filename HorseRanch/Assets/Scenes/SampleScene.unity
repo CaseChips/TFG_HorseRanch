@@ -4985,6 +4985,8 @@ GameObject:
   - component: {fileID: 2117465919}
   - component: {fileID: 2117465918}
   - component: {fileID: 2117465920}
+  - component: {fileID: 2117465921}
+  - component: {fileID: 2117465922}
   m_Layer: 0
   m_Name: Horse
   m_TagString: Untagged
@@ -5182,6 +5184,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedHorse: {fileID: 2117465914}
+--- !u!95 &2117465921
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117465913}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1db025758fdc9ea4c862ca75c05a688e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2117465922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117465913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e16ae9047b8f642a6dec50e42c7e8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1.5
+  wanderRadius: 4
+  minIdleTime: 2
+  maxIdleTime: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
