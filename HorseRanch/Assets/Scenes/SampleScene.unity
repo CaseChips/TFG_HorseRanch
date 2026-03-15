@@ -1189,7 +1189,6 @@ GameObject:
   - component: {fileID: 312744299}
   - component: {fileID: 312744298}
   - component: {fileID: 312744302}
-  - component: {fileID: 312744301}
   - component: {fileID: 312744303}
   m_Layer: 0
   m_Name: Player
@@ -1281,7 +1280,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  rb: {fileID: 312744300}
 --- !u!61 &312744299
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1355,42 +1353,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &312744301
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312744295}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 1.25
 --- !u!114 &312744302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,6 +1365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be98d8fb6052444d80ad7d5f2aaa7c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactDistance: 1
+  interactRadius: 0.3
 --- !u!95 &312744303
 Animator:
   serializedVersion: 7
@@ -1973,7 +1937,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.1875
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

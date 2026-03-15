@@ -1,55 +1,69 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    private List<IInteractable> interactablesInRange = new List<IInteractable>();
+    [Header("Interaction Settings")]
+    public float interactDistance = 1f; 
+    public float interactRadius = 0.3f; 
+
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            IInteractable target = GetClosestInteractable();
-            if (target != null)
+            InteractInDirection();
+        }
+    }
+
+    void InteractInDirection()
+    {
+        float x = animator.GetFloat("Horizontal");
+        float y = animator.GetFloat("Vertical");
+        Vector2 facingDir = new Vector2(x, y).normalized;
+
+        if (facingDir == Vector2.zero) facingDir = Vector2.down;
+
+        Vector2 checkPosition = (Vector2)transform.position + (facingDir * interactDistance);
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(checkPosition, interactRadius);
+
+        foreach (Collider2D hit in hits)
+        {
+            IInteractable interactable = hit.GetComponent<IInteractable>();
+
+            if (interactable != null)
             {
-                target.Interact(); 
+                interactable.Interact();
+                return; 
             }
         }
+
+        Debug.Log("Nothing to interact with there!");
     }
 
-    IInteractable GetClosestInteractable()
+    private void OnDrawGizmos()
     {
-        IInteractable closest = null;
-        float minDistance = float.MaxValue;
-
-        foreach (var item in interactablesInRange)
+        if (Application.isPlaying)
         {
-            float dist = Vector2.Distance(transform.position, ((MonoBehaviour)item).transform.position);
-            if (dist < minDistance)
+            Animator anim = GetComponent<Animator>();
+            if (anim != null)
             {
-                closest = item;
-                minDistance = dist;
+                float x = anim.GetFloat("Horizontal");
+                float y = anim.GetFloat("Vertical");
+                Vector2 facingDir = new Vector2(x, y).normalized;
+                if (facingDir == Vector2.zero) facingDir = Vector2.down;
+
+                Vector2 checkPosition = (Vector2)transform.position + (facingDir * interactDistance);
+
+                Gizmos.color = Color.yellow;
+                Gizmos.DrawWireSphere(checkPosition, interactRadius);
             }
-        }
-        return closest;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        var interactable = collision.GetComponent<IInteractable>();
-        if (interactable != null)
-        {
-            interactablesInRange.Add(interactable);
-            Debug.Log("Object in range!");
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        var interactable = collision.GetComponent<IInteractable>();
-        if (interactable != null)
-        {
-            interactablesInRange.Remove(interactable);
         }
     }
 }
