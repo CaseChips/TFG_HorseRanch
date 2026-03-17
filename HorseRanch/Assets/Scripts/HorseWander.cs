@@ -65,14 +65,8 @@ public class HorseWander : MonoBehaviour
         Vector2 currentPos = transform.position;
         Vector2 direction = (targetPosition - currentPos).normalized;
 
-        if (direction.x < 0)
-        {
-            spriteRenderer.flipX = true; 
-        }
-        else if (direction.x > 0)
-        {
-            spriteRenderer.flipX = false; 
-        }
+        if (direction.x < 0) spriteRenderer.flipX = true;
+        else if (direction.x > 0) spriteRenderer.flipX = false;
 
         if (animator != null)
         {
@@ -86,9 +80,18 @@ public class HorseWander : MonoBehaviour
         if (Vector2.Distance(transform.position, targetPosition) < 0.1f)
         {
             isMoving = false;
-            idleTimer = Random.Range(minIdleTime, maxIdleTime);
 
-            if (animator != null) animator.SetBool("isWalking", false);
+            idleTimer = Random.Range(4f, 8f);
+
+            if (animator != null)
+            {
+                animator.SetBool("isWalking", false);
+
+                if (Random.value > 0.5f)
+                {
+                    animator.SetTrigger("doGraze");
+                }
+            }
         }
     }
 
