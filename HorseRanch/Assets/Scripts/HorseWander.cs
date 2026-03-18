@@ -10,6 +10,10 @@ public class HorseWander : MonoBehaviour
     public float minIdleTime = 2f;
     public float maxIdleTime = 6f;
 
+    [Header("Give Up Settings")]
+    public float maxWalkTime = 5f;
+    private float walkTimer = 0f;
+
     private Vector2 startPosition;
     private Vector2 targetPosition;
 
@@ -17,17 +21,19 @@ public class HorseWander : MonoBehaviour
     private float idleTimer = 0f;
 
     private Animator animator;
-
     private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
 
         startPosition = transform.position;
         isMoving = false;
         idleTimer = Random.Range(minIdleTime, maxIdleTime);
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
     void Update()
@@ -57,6 +63,8 @@ public class HorseWander : MonoBehaviour
         targetPosition = startPosition + randomPoint;
         isMoving = true;
 
+        walkTimer = 0f;
+
         if (animator != null) animator.SetBool("isWalking", true);
     }
 
@@ -75,11 +83,19 @@ public class HorseWander : MonoBehaviour
             animator.SetFloat("Speed", direction.sqrMagnitude);
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        if (Vector2.Distance(transform.position, targetPosition) < 0.1f)
+        rb.linearVelocity = direction * moveSpeed;
+
+        walkTimer += Time.deltaTime;
+
+        if (Vector2.Distance(transform.position, targetPosition) < 0.1f || walkTimer >= maxWalkTime)
         {
             isMoving = false;
+
+            rb.linearVelocity = Vector2.zero;
+
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
             idleTimer = Random.Range(4f, 8f);
 
