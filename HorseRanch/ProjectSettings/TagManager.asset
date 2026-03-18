@@ -47,6 +47,9 @@ TagManager:
   - name: Objects
     uniqueID: 1804417133
     locked: 0
+  - name: Roof
+    uniqueID: 153871839
+    locked: 0
   - name: UI
     uniqueID: 658038829
     locked: 0
