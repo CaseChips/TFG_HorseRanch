@@ -1,10 +1,10 @@
 using UnityEngine;
-using System.Collections; 
+using System.Collections;
 
 public class RoofFader : MonoBehaviour
 {
-    [Header("What are we fading?")]
-    public SpriteRenderer roofRenderer;
+    [Header("Items To Fade")]
+    public SpriteRenderer[] renderersToFade;
 
     [Header("Settings")]
     public float fadeSpeed = 3f;
@@ -13,7 +13,7 @@ public class RoofFader : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StopAllCoroutines(); 
+            StopAllCoroutines();
             StartCoroutine(FadeTo(0f)); 
         }
     }
@@ -23,23 +23,41 @@ public class RoofFader : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             StopAllCoroutines();
-            StartCoroutine(FadeTo(1f));
+            StartCoroutine(FadeTo(1f)); 
         }
     }
 
     private IEnumerator FadeTo(float targetAlpha)
     {
-        Color currentColor = roofRenderer.color;
+        if (renderersToFade.Length == 0) yield break;
 
-        while (Mathf.Abs(currentColor.a - targetAlpha) > 0.01f)
+        float currentAlpha = renderersToFade[0].color.a;
+
+        while (Mathf.Abs(currentAlpha - targetAlpha) > 0.01f)
         {
-            currentColor.a = Mathf.MoveTowards(currentColor.a, targetAlpha, fadeSpeed * Time.deltaTime);
-            roofRenderer.color = currentColor;
+            currentAlpha = Mathf.MoveTowards(currentAlpha, targetAlpha, fadeSpeed * Time.deltaTime);
+
+            foreach (SpriteRenderer renderer in renderersToFade)
+            {
+                if (renderer != null)
+                {
+                    Color newColor = renderer.color;
+                    newColor.a = currentAlpha;
+                    renderer.color = newColor;
+                }
+            }
 
             yield return null;
         }
 
-        currentColor.a = targetAlpha;
-        roofRenderer.color = currentColor;
+        foreach (SpriteRenderer renderer in renderersToFade)
+        {
+            if (renderer != null)
+            {
+                Color finalColor = renderer.color;
+                finalColor.a = targetAlpha;
+                renderer.color = finalColor;
+            }
+        }
     }
 }
