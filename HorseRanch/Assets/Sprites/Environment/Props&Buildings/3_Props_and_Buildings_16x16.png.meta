@@ -3786,28 +3786,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_126
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 1769
-        width: 114
-        height: 296
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a187b93163725c380800000000000000
-      internalID: -8951705571118319590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 3_Props_and_Buildings_16x16_127
       rect:
         serializedVersion: 2
@@ -4028,50 +4006,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_137
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 1839
-        width: 80
-        height: 162
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a274bb1bb48da98c0800000000000000
-      internalID: -3991640300094535894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_138
-      rect:
-        serializedVersion: 2
-        x: 335
-        y: 1951
-        width: 130
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ab0dca1440ae0870800000000000000
-      internalID: 8651028148593167264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 3_Props_and_Buildings_16x16_139
       rect:
         serializedVersion: 2
@@ -4177,50 +4111,6 @@ TextureImporter:
       bones: []
       spriteID: 8c4f371d429332910800000000000000
       internalID: 1811354305428714696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_144
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 1889
-        width: 46
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7f6cc4be6935c940800000000000000
-      internalID: 5315718082823221118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_145
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 1889
-        width: 62
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9bbcddf396a13d00800000000000000
-      internalID: 950724150901390236
       vertices: []
       indices: 
       edges: []
@@ -5106,28 +4996,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_186
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1679
-        width: 129
-        height: 103
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 35a2ce0177b67e510800000000000000
-      internalID: 1578348353545841235
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 3_Props_and_Buildings_16x16_187
       rect:
         serializedVersion: 2
@@ -5637,12 +5505,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_210
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1519
-        width: 126
-        height: 150
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2
+        y: 1520
+        width: 124
+        height: 148
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5659,10 +5527,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_211
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1519
-        width: 160
-        height: 137
+        x: 129
+        y: 1520
+        width: 158
+        height: 135
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5700,28 +5568,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_213
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 1167
-        width: 242
-        height: 338
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8d5fa6a94b1b658b0800000000000000
-      internalID: -5163744533490764328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 3_Props_and_Buildings_16x16_214
       rect:
         serializedVersion: 2
@@ -5748,11 +5594,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1167
-        width: 241
-        height: 114
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 1168
+        width: 240
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5770,11 +5616,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1023
-        width: 241
-        height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 1024
+        width: 240
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5788,37 +5634,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_217
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 879
-        width: 242
-        height: 242
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8609f7421411b99c0800000000000000
-      internalID: -3919520079212998552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 3_Props_and_Buildings_16x16_218
       rect:
         serializedVersion: 2
         x: 0
-        y: 975
-        width: 241
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 976
+        width: 240
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5835,12 +5659,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_219
       rect:
         serializedVersion: 2
-        x: 0
-        y: 879
-        width: 241
-        height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1
+        y: 880
+        width: 239
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5858,11 +5682,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 815
+        y: 816
         width: 16
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5879,12 +5703,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_221
       rect:
         serializedVersion: 2
-        x: 95
-        y: 815
-        width: 32
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 96
+        y: 816
+        width: 30
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5901,10 +5725,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_222
       rect:
         serializedVersion: 2
-        x: 304
-        y: 639
-        width: 110
-        height: 226
+        x: 305
+        y: 640
+        width: 108
+        height: 224
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5923,12 +5747,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_223
       rect:
         serializedVersion: 2
-        x: 437
-        y: 639
-        width: 73
-        height: 226
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 438
+        y: 640
+        width: 71
+        height: 224
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5946,9 +5770,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 639
-        width: 81
-        height: 59
+        y: 640
+        width: 80
+        height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5967,12 +5791,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_225
       rect:
         serializedVersion: 2
-        x: 88
-        y: 646
-        width: 50
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 89
+        y: 647
+        width: 48
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5989,10 +5813,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_226
       rect:
         serializedVersion: 2
-        x: 143
-        y: 639
-        width: 82
-        height: 59
+        x: 144
+        y: 640
+        width: 80
+        height: 57
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6011,12 +5835,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_227
       rect:
         serializedVersion: 2
-        x: 230
-        y: 645
-        width: 53
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 231
+        y: 646
+        width: 51
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6030,79 +5854,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_228
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 607
-        width: 66
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a150f9fe26e5b1d00800000000000000
-      internalID: 944452325884232986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_229
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 607
-        width: 66
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aebcebda9bc766a60800000000000000
-      internalID: 7666952552570604522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_230
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 607
-        width: 66
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8e0b44314905f830800000000000000
-      internalID: 4104196811072933519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: 3_Props_and_Buildings_16x16_231
       rect:
         serializedVersion: 2
-        x: 15
-        y: 543
-        width: 50
-        height: 24
+        x: 16
+        y: 544
+        width: 48
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6121,10 +5879,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_232
       rect:
         serializedVersion: 2
-        x: 79
-        y: 543
-        width: 50
-        height: 24
+        x: 80
+        y: 544
+        width: 48
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6143,10 +5901,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_233
       rect:
         serializedVersion: 2
-        x: 143
-        y: 543
-        width: 18
-        height: 24
+        x: 144
+        y: 544
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6165,10 +5923,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_234
       rect:
         serializedVersion: 2
-        x: 175
-        y: 543
-        width: 18
-        height: 24
+        x: 176
+        y: 544
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6209,10 +5967,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_237
       rect:
         serializedVersion: 2
-        x: 239
-        y: 559
-        width: 18
-        height: 34
+        x: 240
+        y: 560
+        width: 16
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6231,10 +5989,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_238
       rect:
         serializedVersion: 2
-        x: 319
-        y: 543
-        width: 50
-        height: 34
+        x: 320
+        y: 544
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6253,9 +6011,9 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_239
       rect:
         serializedVersion: 2
-        x: 383
+        x: 384
         y: 544
-        width: 49
+        width: 48
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -6297,10 +6055,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_241
       rect:
         serializedVersion: 2
-        x: 15
-        y: 511
-        width: 50
-        height: 18
+        x: 16
+        y: 512
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6319,10 +6077,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_242
       rect:
         serializedVersion: 2
-        x: 79
-        y: 511
-        width: 50
-        height: 18
+        x: 80
+        y: 512
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6341,10 +6099,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_243
       rect:
         serializedVersion: 2
-        x: 143
-        y: 511
-        width: 18
-        height: 18
+        x: 144
+        y: 512
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6363,10 +6121,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_244
       rect:
         serializedVersion: 2
-        x: 175
-        y: 511
-        width: 18
-        height: 18
+        x: 176
+        y: 512
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6385,10 +6143,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_245
       rect:
         serializedVersion: 2
-        x: 208
-        y: 511
-        width: 17
-        height: 34
+        x: 209
+        y: 512
+        width: 15
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6408,9 +6166,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 479
+        y: 480
         width: 16
-        height: 33
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6429,10 +6187,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_247
       rect:
         serializedVersion: 2
-        x: 287
-        y: 511
-        width: 18
-        height: 34
+        x: 288
+        y: 512
+        width: 16
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6451,10 +6209,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_248
       rect:
         serializedVersion: 2
-        x: 319
-        y: 511
-        width: 50
-        height: 18
+        x: 320
+        y: 512
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6473,10 +6231,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_249
       rect:
         serializedVersion: 2
-        x: 15
-        y: 479
-        width: 50
-        height: 18
+        x: 16
+        y: 480
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6495,10 +6253,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_250
       rect:
         serializedVersion: 2
-        x: 79
-        y: 479
-        width: 50
-        height: 18
+        x: 80
+        y: 480
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6517,10 +6275,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_251
       rect:
         serializedVersion: 2
-        x: 143
-        y: 479
-        width: 18
-        height: 18
+        x: 144
+        y: 480
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6539,10 +6297,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_252
       rect:
         serializedVersion: 2
-        x: 175
-        y: 479
-        width: 18
-        height: 18
+        x: 176
+        y: 480
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6562,9 +6320,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 481
+        y: 480
         width: 16
-        height: 11
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6605,10 +6363,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_255
       rect:
         serializedVersion: 2
-        x: 319
-        y: 463
-        width: 50
-        height: 34
+        x: 320
+        y: 464
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6627,10 +6385,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_256
       rect:
         serializedVersion: 2
-        x: 383
+        x: 384
         y: 464
-        width: 49
-        height: 33
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6671,10 +6429,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_258
       rect:
         serializedVersion: 2
-        x: 15
-        y: 431
-        width: 50
-        height: 34
+        x: 16
+        y: 432
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6693,10 +6451,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_259
       rect:
         serializedVersion: 2
-        x: 79
-        y: 431
-        width: 50
-        height: 34
+        x: 80
+        y: 432
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6715,10 +6473,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_260
       rect:
         serializedVersion: 2
-        x: 143
-        y: 431
-        width: 18
-        height: 34
+        x: 144
+        y: 432
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6737,10 +6495,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_261
       rect:
         serializedVersion: 2
-        x: 175
-        y: 431
-        width: 18
-        height: 34
+        x: 176
+        y: 432
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6759,10 +6517,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_262
       rect:
         serializedVersion: 2
-        x: 208
-        y: 431
-        width: 17
-        height: 34
+        x: 209
+        y: 432
+        width: 15
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6781,10 +6539,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_263
       rect:
         serializedVersion: 2
-        x: 239
-        y: 431
-        width: 34
-        height: 34
+        x: 240
+        y: 432
+        width: 32
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6805,8 +6563,8 @@ TextureImporter:
         serializedVersion: 2
         x: 288
         y: 432
-        width: 18
-        height: 34
+        width: 15
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6817,28 +6575,6 @@ TextureImporter:
       bones: []
       spriteID: 1665b1e90eee9e640800000000000000
       internalID: 5109877900721215073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_265
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 399
-        width: 114
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e29aa35ed45a7c760800000000000000
-      internalID: 7478127460248889646
       vertices: []
       indices: 
       edges: []
@@ -6891,12 +6627,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_268
       rect:
         serializedVersion: 2
-        x: 16
-        y: 303
-        width: 97
-        height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 17
+        y: 304
+        width: 95
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6913,12 +6649,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_269
       rect:
         serializedVersion: 2
-        x: 128
-        y: 351
-        width: 48
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 129
+        y: 352
+        width: 46
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6957,12 +6693,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_271
       rect:
         serializedVersion: 2
-        x: 304
-        y: 351
-        width: 6
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 305
+        y: 352
+        width: 4
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6979,12 +6715,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_272
       rect:
         serializedVersion: 2
-        x: 346
-        y: 351
-        width: 6
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 347
+        y: 352
+        width: 4
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7005,8 +6741,8 @@ TextureImporter:
         y: 304
         width: 7
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7023,12 +6759,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_274
       rect:
         serializedVersion: 2
-        x: 167
-        y: 303
-        width: 9
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 168
+        y: 304
+        width: 7
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7045,12 +6781,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_275
       rect:
         serializedVersion: 2
-        x: 304
-        y: 319
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 305
+        y: 320
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7067,12 +6803,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_276
       rect:
         serializedVersion: 2
-        x: 335
-        y: 319
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 336
+        y: 320
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7093,8 +6829,8 @@ TextureImporter:
         y: 272
         width: 16
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7111,12 +6847,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_278
       rect:
         serializedVersion: 2
-        x: 304
-        y: 287
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 305
+        y: 288
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7133,12 +6869,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_279
       rect:
         serializedVersion: 2
-        x: 335
-        y: 287
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 336
+        y: 288
+        width: 15
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7155,12 +6891,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_280
       rect:
         serializedVersion: 2
-        x: 16
-        y: 191
-        width: 97
-        height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 17
+        y: 192
+        width: 95
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7199,12 +6935,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_282
       rect:
         serializedVersion: 2
-        x: 304
-        y: 239
-        width: 6
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 305
+        y: 240
+        width: 4
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7221,12 +6957,12 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_283
       rect:
         serializedVersion: 2
-        x: 346
-        y: 239
-        width: 6
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 347
+        y: 240
+        width: 4
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7309,10 +7045,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_287
       rect:
         serializedVersion: 2
-        x: 304
-        y: 207
-        width: 17
-        height: 18
+        x: 305
+        y: 208
+        width: 15
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7331,10 +7067,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_288
       rect:
         serializedVersion: 2
-        x: 335
-        y: 207
-        width: 17
-        height: 18
+        x: 336
+        y: 208
+        width: 15
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7375,10 +7111,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_290
       rect:
         serializedVersion: 2
-        x: 304
-        y: 175
-        width: 17
-        height: 18
+        x: 305
+        y: 176
+        width: 15
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7397,10 +7133,10 @@ TextureImporter:
       name: 3_Props_and_Buildings_16x16_291
       rect:
         serializedVersion: 2
-        x: 335
-        y: 175
-        width: 17
-        height: 18
+        x: 336
+        y: 176
+        width: 15
+        height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7411,72 +7147,6 @@ TextureImporter:
       bones: []
       spriteID: 6e721f30072cc3850800000000000000
       internalID: 6358170560298559462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_292
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 143
-        width: 130
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c64beb5345345c9c0800000000000000
-      internalID: -3907643072716032916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_293
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 0
-        width: 162
-        height: 129
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14c0c650cf02a6080800000000000000
-      internalID: -9193499422528631743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_294
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 0
-        width: 162
-        height: 129
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d0a192d0f039040a0800000000000000
-      internalID: -6899352936277009907
       vertices: []
       indices: 
       edges: []
@@ -7499,28 +7169,6 @@ TextureImporter:
       bones: []
       spriteID: 6966341e4754cc4b0800000000000000
       internalID: -5418879883335735658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_296
-      rect:
-        serializedVersion: 2
-        x: 399
-        y: 47
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 400467fe0ebe99060800000000000000
-      internalID: 6960854050400518148
       vertices: []
       indices: 
       edges: []
@@ -7819,8 +7467,8 @@ TextureImporter:
         y: 272
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7863,8 +7511,8 @@ TextureImporter:
         y: 288
         width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7885,8 +7533,8 @@ TextureImporter:
         y: 848
         width: 16
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
