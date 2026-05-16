@@ -3632,13 +3632,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_119
+      name: waterbowl
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1999
-        width: 112
-        height: 81
+        x: 80
+        y: 2000
+        width: 15
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7688,7 +7688,7 @@ TextureImporter:
         width: 160
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7702,15 +7702,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3_Props_and_Buildings_16x16_137
+      name: BARN
       rect:
         serializedVersion: 2
         x: 225
         y: 0
         width: 159
         height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7719,6 +7719,28 @@ TextureImporter:
       bones: []
       spriteID: c54e4e920ca21544a8eaad1c14d8b9cd
       internalID: -3991640300094535894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3_Props_and_Buildings_16x16_137
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2037
+        width: 36
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04fecb473ebf874a9a285fa7f9d42df
+      internalID: -2046376228
       vertices: []
       indices: 
       edges: []
@@ -7762,7 +7784,6 @@ TextureImporter:
       3_Props_and_Buildings_16x16_116: 7133029095229645960
       3_Props_and_Buildings_16x16_117: -4603565811874745636
       3_Props_and_Buildings_16x16_118: 8730256396142032518
-      3_Props_and_Buildings_16x16_119: -474887527925198827
       3_Props_and_Buildings_16x16_12: -7208605246993799188
       3_Props_and_Buildings_16x16_120: 1444021699666906965
       3_Props_and_Buildings_16x16_121: -246527338395041199
@@ -7782,7 +7803,7 @@ TextureImporter:
       3_Props_and_Buildings_16x16_134: 8737858333703906769
       3_Props_and_Buildings_16x16_135: 1234700022688050171
       3_Props_and_Buildings_16x16_136: -7627509920866170103
-      3_Props_and_Buildings_16x16_137: -3991640300094535894
+      3_Props_and_Buildings_16x16_137: -2046376228
       3_Props_and_Buildings_16x16_138: 8651028148593167264
       3_Props_and_Buildings_16x16_139: 8658339900573061339
       3_Props_and_Buildings_16x16_14: -708496998590414289
@@ -8059,6 +8080,8 @@ TextureImporter:
       3_Props_and_Buildings_16x16_97: -1848322050904931097
       3_Props_and_Buildings_16x16_98: -1645840732016101647
       3_Props_and_Buildings_16x16_99: 4920172356552868667
+      BARN: -3991640300094535894
+      waterbowl: -474887527925198827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

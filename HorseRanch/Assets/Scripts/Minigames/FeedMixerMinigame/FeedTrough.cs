@@ -7,5 +7,7 @@ public class FeedTrough : MonoBehaviour, IInteractable
     public void Interact()
     {
         FeedMixerMinigame.instance.OpenMinigame(linkedHorse);
+
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 }

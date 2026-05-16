@@ -3,7 +3,6 @@ using UnityEngine;
 public class WaterBowl : MonoBehaviour, IInteractable
 {
     public HorseStats linkedHorse;
-    public Sprite fullBowlSprite;
     private bool isFull = false;
 
     public void Interact()
@@ -27,7 +26,7 @@ public class WaterBowl : MonoBehaviour, IInteractable
     {
         isFull = true;
         if (linkedHorse != null) linkedHorse.IncreaseStat("hunger", 20f);
-        GetComponent<SpriteRenderer>().sprite = fullBowlSprite;
+        GetComponent<SpriteRenderer>().enabled = false;
         Debug.Log("Water bowl filled.");
     }
 }
