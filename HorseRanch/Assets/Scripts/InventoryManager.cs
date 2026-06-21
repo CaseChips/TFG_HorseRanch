@@ -51,6 +51,14 @@ public class InventoryManager : MonoBehaviour
         }
         return false;
     }
+        public void RemoveItem(ItemData item)
+    {
+        if (inventorySlots.Contains(item))
+        {
+            inventorySlots.Remove(item);
+            inventoryUI.UpdateUI();
+        }
+    }
 
     public ItemData GetActiveItem()
     {
