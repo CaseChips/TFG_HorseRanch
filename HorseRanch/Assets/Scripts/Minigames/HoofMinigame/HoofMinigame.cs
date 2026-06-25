@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class HoofMinigame : MonoBehaviour
 {
@@ -11,7 +12,13 @@ public class HoofMinigame : MonoBehaviour
 
     [Header("Game Settings")]
     public int totalDirtPieces = 3; 
-    public int maxMistakes = 3;     
+    public int maxMistakes = 3;
+
+    [Header("Mistake Feedback")]
+    public AudioSource audioSource;
+    public AudioClip mistakeSound;
+    public float shakeDuration = 0.3f;
+    public float shakeMagnitude = 0.1f;
 
     private HorseStats currentHorse;
     private int dirtRemaining;
@@ -58,12 +65,37 @@ public class HoofMinigame : MonoBehaviour
 
     public void FrogPoked()
     {
+        if (mistakeSound != null && audioSource != null) audioSource.PlayOneShot(mistakeSound);
+        
+        StartCoroutine(ShakeCamera());
+
         mistakesMade++;
 
         if (mistakesMade >= maxMistakes)
         {
             LoseGame();
         }
+    }
+
+   private IEnumerator ShakeCamera()
+    {
+        Transform camTransform = Camera.main.transform;
+        Vector3 originalPos = camTransform.localPosition;
+        float elapsed = 0.0f;
+
+        while (elapsed < shakeDuration)
+        {
+            float x = Random.Range(-1f, 1f) * shakeMagnitude;
+            float y = Random.Range(-1f, 1f) * shakeMagnitude;
+
+            camTransform.localPosition = new Vector3(originalPos.x + x, originalPos.y + y, originalPos.z);
+
+            elapsed += Time.unscaledDeltaTime;
+            
+            yield return null; 
+        }
+
+        camTransform.localPosition = originalPos;
     }
 
     private void WinGame()
