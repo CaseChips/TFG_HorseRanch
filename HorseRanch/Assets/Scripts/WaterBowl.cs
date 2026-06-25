@@ -28,5 +28,6 @@ public class WaterBowl : MonoBehaviour, IInteractable
         if (linkedHorse != null) linkedHorse.IncreaseStat("hunger", 20f);
         GetComponent<SpriteRenderer>().enabled = false;
         Debug.Log("Water bowl filled.");
+        MissionManager.instance.AdvanceMission();
     }
 }

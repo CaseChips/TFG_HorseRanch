@@ -1,0 +1,64 @@
+﻿title: Grandma_Intro
+---
+Grandma: Hi sweetie! I'm so glad you made it.
+Jane: Hey Grandma. The place looks... well, it needs some work.
+Grandma: Yes, since your grandpa passed, it's been hard to keep up. My memory isn't what it used to be.
+Grandma: We need to take care of the horse, but the yard is a mess. 
+Grandma: Could you grab the pitchfork and clear out that manure first? It's bad for their hooves to stand in it.
+===
+
+title: Wait_Manure
+---
+Grandma: Did you get all the manure cleared out yet, sweetie? 
+===
+
+title: Grandma_Brush_Hint
+---
+Grandma: Oh, the yard looks much better! Thank you.
+Grandma: Next, we should groom the horse. Dust and sweat can cause sores under the saddle.
+Grandma: There's a brush in your bag. Go give him a good scrubbing.
+===
+
+title: Wait_Brush
+---
+Grandma: Make sure you brush the dirt off his coat, Jane!
+===
+
+title: Grandma_Hoof_Hint
+---
+Grandma: Write your dialogue here for finishing the brushing and hinting at the hooves
+Grandma: Example: Watch out for the sensitive part in the middle of the hoof... I think it's called the frog?
+===
+
+title: Wait_Hooves
+---
+Grandma: Write your waiting dialogue for the hooves here
+===
+
+title: Grandma_Water_Hint
+---
+Grandma: Write your dialogue here for finishing the hooves and hinting at the water bowl
+===
+
+title: Wait_Water
+---
+Grandma: Write your waiting dialogue for the water bowl here
+===
+
+title: Grandma_Feed_Hint
+---
+Grandma: You're doing so well, Jane. I remember now... they need mostly forage to graze on all day.
+Grandma: Go mix up some feed in the trough. Lots of hay, but just a little bit of grain so they don't get an upset stomach.
+===
+
+title: Wait_Feed
+---
+Grandma: Remember, keep the grain ratio low! Less than 30 percent!
+===
+
+title: Grandma_Finish
+---
+Grandma: You did it perfectly. The horse looks so happy and healthy.
+Grandma: Thank you for helping me, Jane. Your grandpa would be so proud of you. 
+Jane: Anytime, Grandma. I think I'm getting the hang of this.
+===

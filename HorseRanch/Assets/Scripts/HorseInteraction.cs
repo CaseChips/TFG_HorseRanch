@@ -23,11 +23,11 @@ public class HorseInteraction : MonoBehaviour, IInteractable
                 {
                     hasBeenBrushed = true;
                     if (linkedHorse != null) linkedHorse.IncreaseStat("comfort", 30f);
-                    Debug.Log("Swish swish! The horse looks shiny and happy.");
+                    MissionManager.instance.AdvanceMission();
                 }
                 else
                 {
-                    Debug.Log("The horse's coat is already perfectly brushed today!");
+                    Debug.Log("Coat was already brushed");
                 }
                 break;
 

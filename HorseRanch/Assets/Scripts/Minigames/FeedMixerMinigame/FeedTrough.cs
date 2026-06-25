@@ -18,9 +18,13 @@ public class FeedTrough : MonoBehaviour, IInteractable
     private int currentHay = 0;
     private int currentGrain = 0;
     private int currentVeggie = 0;
+    
+    private bool minigameCompleted = false; 
 
     public void Interact()
     {
+        if (minigameCompleted) return; 
+
         int totalFeed = currentHay + currentGrain + currentVeggie;
         
         if (totalFeed >= maxCapacity) return;
@@ -56,17 +60,20 @@ public class FeedTrough : MonoBehaviour, IInteractable
         if (grainRatio > 0.3f)
         {
             if (badMixSound != null) audioSource.PlayOneShot(badMixSound);
-            GetComponent<SpriteRenderer>().enabled = false;
+            //GetComponent<SpriteRenderer>().enabled = false;
         }
         else if (totalFeed < maxCapacity)
         {
             if (goodMixSound != null) audioSource.PlayOneShot(goodMixSound);
-            GetComponent<SpriteRenderer>().enabled = false;
+            //GetComponent<SpriteRenderer>().enabled = false;
         }
         else if (totalFeed >= maxCapacity && grainRatio <= 0.3f)
         {
             if (perfectMixSound != null) audioSource.PlayOneShot(perfectMixSound);
             GetComponent<SpriteRenderer>().enabled = false;
+            
+            MissionManager.instance.AdvanceMission();
+            minigameCompleted = true; 
         }
     }
 }

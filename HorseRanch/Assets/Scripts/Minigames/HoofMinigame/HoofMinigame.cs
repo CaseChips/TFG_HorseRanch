@@ -36,19 +36,19 @@ public class HoofMinigame : MonoBehaviour
         dirtRemaining = totalDirtPieces;
         mistakesMade = 0;
 
+        MissionManager.instance.UpdateProgressText($"({dirtRemaining} dirt remaining)");
  
         if (hoofPickCursor != null)
         {
             Cursor.SetCursor(hoofPickCursor, Vector2.zero, CursorMode.Auto);
         }
-
-        Debug.Log("Hoof Minigame Opened! Clear the dirt, avoid the pink area.");
     }
 
     public void DirtPicked()
     {
         dirtRemaining--;
-        Debug.Log("Dirt picked! Remaining: " + dirtRemaining);
+
+        MissionManager.instance.UpdateProgressText($"({dirtRemaining} dirt remaining)");
 
         if (dirtRemaining <= 0)
         {
@@ -59,7 +59,6 @@ public class HoofMinigame : MonoBehaviour
     public void FrogPoked()
     {
         mistakesMade++;
-        Debug.Log("Ouch! You hit the frog! Mistakes: " + mistakesMade + "/" + maxMistakes);
 
         if (mistakesMade >= maxMistakes)
         {
@@ -69,7 +68,7 @@ public class HoofMinigame : MonoBehaviour
 
     private void WinGame()
     {
-        Debug.Log("Perfect! Hooves are clean.");
+        MissionManager.instance.AdvanceMission();
         if (currentHorse != null)
         {
             currentHorse.IncreaseStat("hygiene", 40f);
@@ -80,11 +79,10 @@ public class HoofMinigame : MonoBehaviour
 
     private void LoseGame()
     {
-        Debug.Log("You poked the frog too much! The horse is now lame.");
+        MissionManager.instance.AdvanceMission();
         if (currentHorse != null)
         {
             currentHorse.IncreaseStat("comfort", -50f);
-            // In a full game, you might trigger a "lame" boolean here
         }
         CloseMinigame();
     }

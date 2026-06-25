@@ -50,7 +50,6 @@ public class FeedMixerMinigame : MonoBehaviour
         Time.timeScale = 0f; 
     }
 
-    // --- BUTTON FUNCTIONS ---
 
     public void AddHay()
     {
@@ -75,7 +74,6 @@ public class FeedMixerMinigame : MonoBehaviour
                           $"Treats: {treatScoops}";
     }
 
-    // --- THE EDUCATIONAL LOGIC ---
 
     public void ServeMeal()
     {
@@ -85,7 +83,6 @@ public class FeedMixerMinigame : MonoBehaviour
             return;
         }
 
-        // EVALUATION: The 80/20 Rule
         if (grainScoops > 2)
         {
             Debug.Log("DANGER: Too much grain! Horses have sensitive stomachs and excess grain can cause Colic or Laminitis.");

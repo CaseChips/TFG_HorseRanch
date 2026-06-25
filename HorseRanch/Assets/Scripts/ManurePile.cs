@@ -3,6 +3,7 @@ using UnityEngine;
 public class ManurePile : MonoBehaviour, IInteractable
 {
     public HorseStats linkedHorse;
+
     public void Interact()
     {
         ItemData currentItem = InventoryManager.instance.GetActiveItem();
@@ -12,14 +13,14 @@ public class ManurePile : MonoBehaviour, IInteractable
             if (linkedHorse != null)
             {
                 linkedHorse.IncreaseStat("hygiene", 20f);
+                MissionManager.instance.CheckManure();
             }
 
-            Debug.Log("Cleaned the stall with the Pitchfork!");
-            Destroy(gameObject); 
+            Destroy(gameObject);
         }
         else
         {
-            Debug.Log("Gross! You need to equip the Pitchfork to clean this up.");
+            Debug.Log("Equip Pitchfork");
         }
     }
 }
