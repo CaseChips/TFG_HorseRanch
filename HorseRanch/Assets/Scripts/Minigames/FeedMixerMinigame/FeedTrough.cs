@@ -7,6 +7,7 @@ public class FeedTrough : MonoBehaviour, IInteractable
     public AudioClip goodMixSound;
     public AudioClip badMixSound;
     public AudioClip perfectMixSound;
+    public AudioClip pouringSound;
 
     [Header("Capacity")]
     public int maxCapacity = 5;
@@ -23,7 +24,9 @@ public class FeedTrough : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (minigameCompleted) return; 
+        if (minigameCompleted) return;
+
+        if (pouringSound != null) audioSource.PlayOneShot(pouringSound);
 
         int totalFeed = currentHay + currentGrain + currentVeggie;
         
@@ -60,12 +63,10 @@ public class FeedTrough : MonoBehaviour, IInteractable
         if (grainRatio > 0.3f)
         {
             if (badMixSound != null) audioSource.PlayOneShot(badMixSound);
-            //GetComponent<SpriteRenderer>().enabled = false;
         }
         else if (totalFeed < maxCapacity)
         {
             if (goodMixSound != null) audioSource.PlayOneShot(goodMixSound);
-            //GetComponent<SpriteRenderer>().enabled = false;
         }
         else if (totalFeed >= maxCapacity && grainRatio <= 0.3f)
         {

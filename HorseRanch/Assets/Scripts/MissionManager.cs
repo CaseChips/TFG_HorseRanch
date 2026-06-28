@@ -11,9 +11,14 @@ public class MissionManager : MonoBehaviour
     [Header("Objective UI")]
     public TextMeshProUGUI objectiveTextUI; 
     [TextArea]
-    public string[] stepDescriptions; 
-    
+    public string[] stepDescriptions;
+
+    public FadeOut fadeOut;
     private string dynamicProgress = "";
+
+    public AudioSource audioSource;
+    public AudioClip manureSound;
+    public AudioClip winSound;
 
     private void Awake()
     {
@@ -28,10 +33,12 @@ public class MissionManager : MonoBehaviour
 
     public void CheckManure()
     {
+        if (manureSound != null) audioSource.PlayOneShot(manureSound);       
         ManurePile[] remainingManure = FindObjectsOfType<ManurePile>();
 
         if (currentStep == 1 && remainingManure.Length <= 1)
         {
+            if (winSound != null) audioSource.PlayOneShot(winSound);
             AdvanceMission();
         }
     }
@@ -60,6 +67,7 @@ public class MissionManager : MonoBehaviour
         else
         {
             objectiveTextUI.text = "<b>Current Objective:</b>\nAll tasks complete!";
+            fadeOut.TriggerEndingSequence();
         }
     }
 }

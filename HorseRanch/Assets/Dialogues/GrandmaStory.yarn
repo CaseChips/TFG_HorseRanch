@@ -1,64 +1,70 @@
 ﻿title: Grandma_Intro
 ---
-Grandma: Hi sweetie! I'm so glad you made it.
-Jane: Hey Grandma. The place looks... well, it needs some work.
-Grandma: Yes, since your grandpa passed, it's been hard to keep up. My memory isn't what it used to be.
-Grandma: We need to take care of the horse, but the yard is a mess. 
-Grandma: Could you grab the pitchfork and clear out that manure first? It's bad for their hooves to stand in it.
+Grandma: Hi sweetie! [pause=500/] I'm so glad you made it.
+Jane: Hey Grandma. [pause=500/] The place looks[pause=500/].[pause=500/].[pause=500/]. well, [pause=500/] it definitely needs some work.
+Grandma: Yes, [pause=500/] since your grandpa passed, [pause=500/] it's been hard to keep up. [pause=500/] My memory isn't quite what it used to be, either.
+Grandma: We need to take care of the horse, [pause=500/] but the yard is a bit of a mess. 
+Grandma: Could you grab the <b>shovel</b> and clear out that <color=\#964B00>manure</color> first? [pause=500/] It's terrible for their hooves to stand in it.
+Grandma: I should really invest in a <b>pitchfork</b>[pause=500/].[pause=500/].[pause=500/]. [pause=500/] it's much more efficient for picking up <color=\#964B00>horse manure</color>.
 ===
 
 title: Wait_Manure
 ---
-Grandma: Did you get all the manure cleared out yet, sweetie? 
+Grandma: Did you get all the manure cleared out yet, [pause=500/] sweetie? 
 ===
 
 title: Grandma_Brush_Hint
 ---
-Grandma: Oh, the yard looks much better! Thank you.
-Grandma: Next, we should groom the horse. Dust and sweat can cause sores under the saddle.
-Grandma: There's a brush in your bag. Go give him a good scrubbing.
+Grandma: Oh, [pause=500/] the yard looks so much better! [pause=500/] Thank you. [pause=500/] I'm sorry about the <b>pitchfork</b>, [pause=500/] sweetie. [pause=500/] It would've made the job a lot easier for you. 
+Grandma: Next, [pause=500/] we should groom the horse. [pause=500/] <b>Dust and sweat can cause sores under the saddle</b>.
+Grandma: There's a <b>brush</b> in your bag. [pause=500/] Go give him a good scrubbing.
 ===
 
 title: Wait_Brush
 ---
-Grandma: Make sure you brush the dirt off his coat, Jane!
+Grandma: Make sure you brush all the dirt off his beautiful <color=\#D4BA8C>buckskin</color> coat, [pause=500/] Jane!
 ===
 
 title: Grandma_Hoof_Hint
 ---
-Grandma: Write your dialogue here for finishing the brushing and hinting at the hooves
-Grandma: Example: Watch out for the sensitive part in the middle of the hoof... I think it's called the frog?
+Grandma: His <color=yellow>buckskin</color> coat looks so shiny now! [pause=500/] A shiny coat is always a sign of a healthy horse.
+Grandma: Alright, [pause=500/] you should clean his hooves next. [pause=500/] After standing in that manure, they must be pretty dirty... 
+Grandma: Cleaning them frequently is absolutely <b>essential</b> to a horse's health.
+Grandma: There should be a <b>hoof pick</b> in your backpack. [pause=500/] Just be careful to avoid a sensitive area on the hoof called the <b>frog</b>. [pause=500/] I can't quite remember what part of the hoof that is, [pause=500/] though[pause=500/].[pause=500/].[pause=500/]. [pause=500/] ugh, [pause=500/] my head.
 ===
 
 title: Wait_Hooves
 ---
-Grandma: Write your waiting dialogue for the hooves here
+Grandma: Have you finished cleaning his hooves yet? [pause=500/] Remember, [pause=500/] use vertical motions and don't touch the[pause=500/].[pause=500/].[pause=500/]. [pause=500/] oh, [pause=750/] what was it called?
 ===
 
 title: Grandma_Water_Hint
 ---
-Grandma: Write your dialogue here for finishing the hooves and hinting at the water bowl
+Grandma: Wonderful! [pause=500/] Now he's much less likely to go lame.
+Grandma: Horses are big animals, [pause=500/] so they always need access to fresh, [pause=500/] clean water.
+Grandma: Would you mind filling his <b>water trough</b>? [pause=500/] It should be somewhere in the stable.
 ===
 
 title: Wait_Water
 ---
-Grandma: Write your waiting dialogue for the water bowl here
+Grandma: Have you filled the trough yet? [pause=500/] You can use your <color=blue>watering can</color>. 
 ===
 
 title: Grandma_Feed_Hint
 ---
-Grandma: You're doing so well, Jane. I remember now... they need mostly forage to graze on all day.
-Grandma: Go mix up some feed in the trough. Lots of hay, but just a little bit of grain so they don't get an upset stomach.
+Grandma: You're doing so well, [pause=500/] Jane. [pause=500/] We just need to feed him now.
+Grandma: You can fit up to <b>5 food items</b> in the feed trough. [pause=500/] I can't quite remember the perfect mix of <size=150%><color=yellow>hay</color></size>, [pause=500/] <size=75%><color=\#964B00>grain</color></size>, [pause=500/] and <size=75%><color=orange>treats</color></size>[pause=500/].[pause=500/].[pause=500/].
+Grandma: I usually keep the feed sources <b>near the trough</b> so I don't overwork my old knees.
 ===
 
 title: Wait_Feed
 ---
-Grandma: Remember, keep the grain ratio low! Less than 30 percent!
+Grandma: Having trouble finding the feed? [pause=500/] It should be right there in the stable, [pause=500/] just look around. [pause=500/] Mix <size=150%><color=yellow>hay</color></size>, [pause=500/] <size=75%><color=\#964B00>grain</color></size>, [pause=500/] and <size=75%><color=orange>treats</color></size> for the perfect meal.
 ===
 
 title: Grandma_Finish
 ---
-Grandma: You did it perfectly. The horse looks so happy and healthy.
-Grandma: Thank you for helping me, Jane. Your grandpa would be so proud of you. 
-Jane: Anytime, Grandma. I think I'm getting the hang of this.
+Grandma: You did it perfectly. [pause=500/] He looks so happy and healthy now.
+Grandma: Thank you for helping me, [pause=500/] Jane. [pause=500/] Your grandpa would be so proud of you. 
+Jane: Anytime, [pause=500/] Grandma. [pause=500/] I think I'm actually getting the hang of this.
 ===

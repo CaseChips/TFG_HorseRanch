@@ -12,11 +12,13 @@ public class HoofMinigame : MonoBehaviour
 
     [Header("Game Settings")]
     public int totalDirtPieces = 3; 
-    public int maxMistakes = 3;
+    public int maxMistakes = 4;
 
     [Header("Mistake Feedback")]
     public AudioSource audioSource;
     public AudioClip mistakeSound;
+    public AudioClip loseSound;
+    public AudioClip winSound;
     public float shakeDuration = 0.3f;
     public float shakeMagnitude = 0.1f;
 
@@ -100,25 +102,52 @@ public class HoofMinigame : MonoBehaviour
 
     private void WinGame()
     {
+        StartCoroutine(WinGameSequence());
+    }
+
+    private IEnumerator WinGameSequence()
+    {
+        if (winSound != null && audioSource != null) 
+        {
+            audioSource.PlayOneShot(winSound);
+            
+            yield return new WaitForSecondsRealtime(winSound.length);
+        }
+
         MissionManager.instance.AdvanceMission();
+        
         if (currentHorse != null)
         {
             currentHorse.IncreaseStat("hygiene", 40f);
             currentHorse.IncreaseStat("comfort", 10f);
         }
+        
         CloseMinigame();
     }
 
     private void LoseGame()
     {
+        StartCoroutine(LoseGameSequence());
+    }
+
+    private IEnumerator LoseGameSequence()
+    {
+        if (loseSound != null && audioSource != null) 
+        {
+            audioSource.PlayOneShot(loseSound);
+            
+            yield return new WaitForSecondsRealtime(loseSound.length);
+        }
+
         MissionManager.instance.AdvanceMission();
+        
         if (currentHorse != null)
         {
             currentHorse.IncreaseStat("comfort", -50f);
         }
+        
         CloseMinigame();
     }
-
     public void CloseMinigame()
     {
         minigamePanel.SetActive(false);

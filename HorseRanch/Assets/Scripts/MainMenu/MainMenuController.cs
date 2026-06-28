@@ -14,7 +14,7 @@ public class MainMenuController : MonoBehaviour
     public float fadeDuration = 1.5f;
 
     [Header("Scene Transition")]
-    public string mainGameSceneName = "HorseRanch"; 
+    public string mainGameSceneName = "MainScene"; 
 
     [Header("Yarn Integration")]
     public DialogueRunner dialogueRunner;
@@ -26,15 +26,67 @@ public class MainMenuController : MonoBehaviour
     {
         mainMenuPanel.SetActive(true);
         cutscenePanel.SetActive(false);
-        
+
+        fadeScreen.alpha = 1f;
+        fadeScreen.gameObject.SetActive(true);
+        AudioListener.volume = 0f;
+
+        StartCoroutine(FadeInMainMenu());
+    }
+
+    private IEnumerator FadeInMainMenu()
+    {
+        float elapsed = 0f;
+
+        while (elapsed < fadeDuration)
+        {
+            float normalizedTime = elapsed / fadeDuration;
+            
+            fadeScreen.alpha = Mathf.Lerp(1f, 0f, normalizedTime);
+            AudioListener.volume = Mathf.Lerp(0f, 1f, normalizedTime);
+            
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
         fadeScreen.alpha = 0f;
         fadeScreen.gameObject.SetActive(false);
+        AudioListener.volume = 1f;
     }
 
     public void OnPlayButtonClicked()
     {
+        StartCoroutine(TransitionToCutscene());
+    }
+
+    private IEnumerator TransitionToCutscene()
+    {
+        fadeScreen.gameObject.SetActive(true);
+        float elapsed = 0f;
+        float quickFade = fadeDuration / 2f; 
+
+        while (elapsed < quickFade)
+        {
+            fadeScreen.alpha = Mathf.Lerp(0f, 1f, elapsed / quickFade);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        fadeScreen.alpha = 1f;
+
         mainMenuPanel.SetActive(false);
         cutscenePanel.SetActive(true);
+
+        elapsed = 0f;
+        
+        while (elapsed < quickFade)
+        {
+            fadeScreen.alpha = Mathf.Lerp(1f, 0f, elapsed / quickFade);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        
+        fadeScreen.alpha = 0f;
+        fadeScreen.gameObject.SetActive(false);
 
         dialogueRunner.StartDialogue(cutsceneNode);
         isCutsceneRunning = true;
@@ -53,15 +105,22 @@ public class MainMenuController : MonoBehaviour
     {
         fadeScreen.gameObject.SetActive(true);
         float elapsed = 0f;
+        
+        float startVolume = AudioListener.volume;
 
         while (elapsed < fadeDuration)
         {
-            fadeScreen.alpha = Mathf.Lerp(0f, 1f, elapsed / fadeDuration);
+            float normalizedTime = elapsed / fadeDuration;
+            
+            fadeScreen.alpha = Mathf.Lerp(0f, 1f, normalizedTime);
+            AudioListener.volume = Mathf.Lerp(startVolume, 0f, normalizedTime);
+            
             elapsed += Time.deltaTime;
             yield return null;
         }
 
         fadeScreen.alpha = 1f;
+        AudioListener.volume = 0f;
 
         SceneManager.LoadScene(mainGameSceneName);
     }

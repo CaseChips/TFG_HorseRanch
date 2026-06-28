@@ -4,6 +4,12 @@ public class HorseInteraction : MonoBehaviour, IInteractable
 {
     public HorseStats linkedHorse;
 
+    public AudioSource audioSource;
+
+    public AudioClip brushing;
+
+    public AudioClip neigh;
+
     private bool hasBeenBrushed = false;
 
     public void Interact()
@@ -12,7 +18,8 @@ public class HorseInteraction : MonoBehaviour, IInteractable
 
         if (currentItem == null)
         {
-            Debug.Log("You pet the horse. (Try equipping a tool!)");
+            if (neigh != null) audioSource.PlayOneShot(neigh);
+            Debug.Log("You pet the horse.");
             return; 
         }
 
@@ -21,6 +28,7 @@ public class HorseInteraction : MonoBehaviour, IInteractable
             case "Brush":
                 if (!hasBeenBrushed)
                 {
+                    if (brushing != null) audioSource.PlayOneShot(brushing);
                     hasBeenBrushed = true;
                     if (linkedHorse != null) linkedHorse.IncreaseStat("comfort", 30f);
                     MissionManager.instance.AdvanceMission();
